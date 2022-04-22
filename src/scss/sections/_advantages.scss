@@ -5,37 +5,31 @@
 .advant__list {
     display: flex;
     justify-content: space-between;
-    width: 75%;
     
     @media (max-width: 480px) {
         flex-direction: column;
     }
 
-    @media (min-width: 481px) and (max-width: 1200px) {
-        width: 75%;
-    }
-
-    @media (min-width: 1200px) {
-        width: 100%;
-    }
-
     &-item {
 
         @media (max-width: 480px) {
+            width: 75%;
+            
             &:not(:last-child) {
                 margin-bottom: 32px;
             }
         }
     
         @media (min-width: 481px) and (max-width: 1200px) {
+            width: 30%;
+
             &:not(:last-child) {
-                margin-right: 10px;
+                margin-right: 20px;
             }
         }
     
         @media (min-width: 1200px) {
             width: 30%;
-            height: 223px;
         }
     }
 }
