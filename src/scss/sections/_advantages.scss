@@ -1,0 +1,134 @@
+.advant {
+    display: flex;
+    margin: 0;
+}
+.advant__list {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        width: 75%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 100%;
+    }
+
+    &-item {
+
+        @media (max-width: 480px) {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+    
+        @media (min-width: 481px) and (max-width: 1200px) {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    
+        @media (min-width: 1200px) {
+            width: 30%;
+            height: 223px;
+        }
+    }
+}
+.advant__item {
+    display: flex;
+
+    &-bg {
+
+        &-one {
+            width: 50px;
+            height: 50px;  
+            background: url(../img/advantages/icon1@1.png) no-repeat;
+
+            @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../img/advantages/icon1@2.png) cover no-repeat; 
+                }
+            }
+
+        &-two {
+            width: 50px;
+            height: 50px; 
+            background: url(../img/advantages/icon2@1.png) no-repeat;
+    
+            @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background: url(../img/advantages/icon2@2.png) cover no-repeat;
+                }
+            }
+        &-three {
+            width: 50px;
+            height: 50px;  
+            background: url(../img/advantages/icon3@1.png) no-repeat;
+        
+            @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background: url(../img/advantages/icon3@2.png) cover no-repeat;
+                }
+            }
+    }
+
+    &-number {
+        font-family: $second-font-style;
+        font-weight: 400;
+        text-align: right;
+        letter-spacing: 0.04em;
+
+        color: $main-color;
+
+        @media (max-width: 480px) {
+            font-size: 36px;
+            line-height: 41px;
+            text-transform: uppercase;
+
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    
+        @media (min-width: 481px) and (max-width: 1200px) {
+            font-size: 48px;
+            line-height: 55px;
+
+            margin-top: 36px;
+            margin-bottom: 13px;
+        }
+    
+        @media (min-width: 1200px) {
+            font-size: 58px;
+            line-height: 66px;
+
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &-text {
+        font-family: $main-font-style;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+
+        color: $main-text-color;
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    
+        @media (min-width: 481px) and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    
+        @media (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+    }
+}
