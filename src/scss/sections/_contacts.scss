@@ -1,0 +1,20 @@
+
+
+.contacts__titles, .contacts__titles--green {
+    color: #fff;
+    font-family: $main-font-style;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: center;
+    border-radius: 6px;
+    height: 30px;
+    }
+.contacts__titles {
+    background-color: #F0D1A5;
+    width: 75px;
+}
+.contacts__titles--green {
+    background-color: #C2E297;
+    width: 140px;
+}
