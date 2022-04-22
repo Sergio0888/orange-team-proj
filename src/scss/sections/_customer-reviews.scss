@@ -42,7 +42,18 @@
   margin: 0 auto;
   width: 1000px;
   height: 138px;
-  background-color: #fafafa;
+  background: linear-gradient(
+    #fafafa 53%,
+    #e1e1e1 53%,
+    #e1e1e1 54%,
+    #fafafa 54%,
+    #fafafa 73%,
+    #e1e1e1 73%,
+    #e1e1e1 74%,
+    #fafafa 74%,
+    #fafafa 100%
+  );
+  // #fafafa;
 }
 
 .slideText {
@@ -57,7 +68,6 @@
   line-height: 186%;
   text-align: center;
   letter-spacing: 0.04em;
-  text-decoration: underline;
 
   color: $main-text-color;
   z-index: 100;
