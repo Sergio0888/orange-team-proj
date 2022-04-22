@@ -1,0 +1,34 @@
+// Для розовой кнопки классы - btn btn__acent
+// Для белой кнопки классы - btn btn__light
+
+// Размер кнопки меняется в зависимости от размера экрана.
+// Ниже значения которые нужно вставлять отдельно в зависимости от секции
+
+//   padding: ваше значение;
+//   border-radius: 22px или 20px;
+//   font-size: ваше значение;
+
+.btn {
+  border: none;
+  transition: $transition;
+
+  &__light {
+    color: #d41443;
+    background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__acent {
+    color: #ffffff;
+    background-color: #d41443;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
+}
