@@ -129,9 +129,10 @@
 }
 
 .dots {
-  position: absolute;
-  top: 255px;
-  left: calc(50% - 20px);
+  // position: absolute;
+  // top: 255px;
+  // left: calc(50% - 20px);
+  text-align: center;
 
   @media (max-width: 409px) {
     top: 310px;
@@ -205,22 +206,6 @@
   background-color: transparent;
   border-radius: 0;
 }
-
-// Планшет
-
-// @media (min-width: 481px) and (max-width: 1200px) {
-//   .reviews {
-//     display: none;
-//   }
-// }
-
-// // ТЕЛЕФОН
-
-// @media (max-width: 480px) {
-//   .reviews {
-//     display: none;
-//   }
-// }
 
 /* Анимация слайдов */
 
