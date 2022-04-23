@@ -27,39 +27,44 @@
 .slideText-box::before {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 7%;
+  top: 32px;
+  left: 105px;
   display: inline-block;
   width: 54px;
   height: 40px;
   background: url(..//..//img/reviews/quotes@1.png) center/cover no-repeat;
   z-index: 50;
+  
 }
 
 .slideText-bg {
   display: inline-block;
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
   height: 138px;
-  background: linear-gradient(
-    #fafafa 53%,
-    #e1e1e1 53%,
-    #e1e1e1 54%,
-    #fafafa 54%,
-    #fafafa 73%,
-    #e1e1e1 73%,
-    #e1e1e1 74%,
-    #fafafa 74%,
-    #fafafa 100%
-  );
-  // #fafafa;
+  // background: linear-gradient(
+  //   #fafafa 53%,
+  //   #e1e1e1 53%,
+  //   #e1e1e1 54%,
+  //   #fafafa 54%,
+  //   #fafafa 73%,
+  //   #e1e1e1 73%,
+  //   #e1e1e1 74%,
+  //   #fafafa 74%,
+  //   #fafafa 100%
+  // );
+  background:#FAFAFA;
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+    height: 164px;  
+  }
 }
 
 .slideText {
   position: absolute;
-  top: 10px;
-  min-width: 1037px;
-  padding: 32px 107px;
+  top: 50px;
+  width: 70%;
+  left: 142px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -70,6 +75,11 @@
 
   color: $main-text-color;
   z-index: 100;
+  background: repeating-linear-gradient(to bottom,transparent 0, transparent 27px,#E1E1E1 30px,#E1E1E1 20px);
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+        
+  }
 }
 
 .second-box {
@@ -125,19 +135,19 @@
 
 // Планшет
 
-@media (min-width: 481px) and (max-width: 1200px) {
-  .reviews {
-    display: none;
-  }
-}
+// @media (min-width: 481px) and (max-width: 1200px) {
+//   .reviews {
+//     display: none;
+//   }
+// }
 
-// ТЕЛЕФОН
+// // ТЕЛЕФОН
 
-@media (max-width: 480px) {
-  .reviews {
-    display: none;
-  }
-}
+// @media (max-width: 480px) {
+//   .reviews {
+//     display: none;
+//   }
+// }
 
 /* Анимация слайдов */
 
