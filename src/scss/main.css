@@ -1,0 +1,456 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .section {
+    padding: 40px 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 60px 15px;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #d41443;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 34px;
+    line-height: 39px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.section__bg-pink {
+  background-color: #fff5f6;
+}
+
+.advant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.advant__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+}
+
+@media (max-width: 480px) {
+  .advant__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .advant__list {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advant__list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .advant__list-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .advant__list-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advant__list-item {
+    width: 30%;
+    height: 223px;
+  }
+}
+
+.advant__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advant__item-bg-one {
+  width: 50px;
+  height: 50px;
+  background: url(../img/advantages/icon1@1.png) no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item-bg-one {
+    background-image: url(../img/advantages/icon1@2.png) cover no-repeat;
+  }
+}
+
+.advant__item-bg-two {
+  width: 50px;
+  height: 50px;
+  background: url(../img/advantages/icon2@1.png) no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item-bg-two {
+    background: url(../img/advantages/icon2@2.png) cover no-repeat;
+  }
+}
+
+.advant__item-bg-three {
+  width: 50px;
+  height: 50px;
+  background: url(../img/advantages/icon3@1.png) no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item-bg-three {
+    background: url(../img/advantages/icon3@2.png) cover no-repeat;
+  }
+}
+
+.advant__item-number {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+@media (max-width: 480px) {
+  .advant__item-number {
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .advant__item-number {
+    font-size: 48px;
+    line-height: 55px;
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advant__item-number {
+    font-size: 58px;
+    line-height: 66px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.advant__item-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+@media (max-width: 480px) {
+  .advant__item-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .advant__item-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advant__item-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.products {
+  position: relative;
+  z-index: 1;
+  z-index: 1;
+}
+
+.products__lable {
+  font-family: "Titan One", cursive;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.products__header {
+  font-family: "Titan One", cursive;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-top: 16px;
+}
+
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.products__item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  height: 796px;
+}
+
+.products__img-one {
+  position: absolute;
+  right: 0;
+  width: 370px;
+  height: 394px;
+  background-image: url(../img/products/ice-cream@1.png);
+  z-index: 1;
+}
+
+.products__img-two {
+  position: absolute;
+  right: 0;
+  width: 370px;
+  height: 394px;
+  background-image: url(../img/products/ice-coffee@1.png);
+}
+
+.products__img-three {
+  position: absolute;
+  right: 0;
+  width: 370px;
+  height: 394px;
+  background-image: url(../img/products/milkshakes@1.png);
+}
+
+.products__box-one {
+  position: absolute;
+  bottom: 0;
+  height: 535px;
+  background: #FFB8CA;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.products__box-one .btn {
+  padding: 13px;
+  margin-top: 60px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.products__box-two {
+  position: absolute;
+  bottom: 0;
+  height: 535px;
+  background-color: #F0D1A5;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.products__box-three {
+  position: absolute;
+  bottom: 0;
+  height: 535px;
+  background-color: #C2E297;
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.products__box-header {
+  font-family: "Titan One", cursive;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 165px;
+}
+
+.products__box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__box-item {
+  margin: 4px;
+}
+
+.products__point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-top: 32px;
+}
+
+.products__box-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-top: 70px;
+}
+
+.btn {
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn__light {
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+.btn__light:hover, .btn__light:focus {
+  background-color: #ecebeb;
+}
+
+.btn__acent {
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.btn__acent:hover, .btn__acent:focus {
+  background-color: #c7133e;
+}
+/*# sourceMappingURL=main.css.map */
