@@ -122,20 +122,21 @@
 }
 
 .dots {
-  position: absolute;
-  top: 255px;
-  left: calc(50% - 20px);
+  // position: absolute;
+  // top: 255px;
+  // left: calc(50% - 20px);
+  text-align: center;
 
-  @media (max-width: 480px) {
-    top: 300px;
-  }
+  // @media (max-width: 480px) {
+  //   top: 300px;
+  // }
 
-  @media (min-width: 481px) and (max-width: 644px) {
-    top: 298px;
-  }
-  @media (min-width: 645px) and (max-width: 1200px) {
-    top: 270px;
-  }
+  // @media (min-width: 481px) and (max-width: 644px) {
+  //   top: 298px;
+  // }
+  // @media (min-width: 645px) and (max-width: 1200px) {
+  //   top: 270px;
+  // }
 }
 
 .dots-pink {
@@ -190,22 +191,6 @@
   background-color: transparent;
   border-radius: 0;
 }
-
-// Планшет
-
-// @media (min-width: 481px) and (max-width: 1200px) {
-//   .reviews {
-//     display: none;
-//   }
-// }
-
-// // ТЕЛЕФОН
-
-// @media (max-width: 480px) {
-//   .reviews {
-//     display: none;
-//   }
-// }
 
 /* Анимация слайдов */
 

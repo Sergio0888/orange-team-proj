@@ -13,9 +13,7 @@
   border: none;
   transition: $transition;
 
-  padding: 15px 32px;
-  border-radius: 22px;
-  font-size: 16px;
+  padding: 15px 20px;
 
   &__light {
     color: #d41443;
@@ -38,29 +36,72 @@
   }
 }
 
-// УГЛОВАЯ СТРЕЛКА
-
-// Стрелка белая - arrow
-// Стрелка розовая - arrow-acent
-// ваша кнопка должна выглядеть так:
-//  <button type="button" class="btn btn__acent">
-//   Read more <span class="ТУТ НУЖНЫЙ КЛАСС вашей стрелки"></span>
-// </button>
+// СТРЕЛКА НА РОЗОВУЮ КНОПКУ
+// Структура вашей кнопки:
+//    <button type="button" class="btn btn__acent">
+//         Read more <span class="arrow"></span>
+//    </button>
 
 .arrow {
-  border: solid #ffffff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 15%;
+  height: 10px;
+  width: 7px;
+  cursor: pointer;
 }
 
-.arrow-acent {
-  border: solid #d41443;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.arrow::before {
+  transform: rotate(45deg);
+
+  top: 15%;
+}
+.arrow::after {
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  top: 50%;
+}
+
+// СТРЕЛКА НА БЕЛУЮ КНОПКУ
+// Структура вашей кнопки:
+//    <button type="button" class="btn btn__light">
+//         Read more <span class="arrow-light"></span>
+//    </button>
+
+.arrow-light {
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 15%;
+  height: 10px;
+  width: 7px;
+  cursor: pointer;
+}
+
+.arrow-light::before,
+.arrow-light::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  background-color: #d41443;
+  border-radius: 2px;
+}
+
+.arrow-light::before {
+  transform: rotate(45deg);
+
+  top: 15%;
+}
+.arrow-light::after {
+  transform: rotate(-45deg);
+  top: 50%;
 }
