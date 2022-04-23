@@ -34,7 +34,16 @@
   height: 40px;
   background: url(..//..//img/reviews/quotes@1.png) center/cover no-repeat;
   z-index: 50;
-  
+
+  @media (max-width: 480px) {
+    top: 3%;
+    left: 10%;
+  }
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+    top: 8%;
+    left: 12%;
+  }
 }
 
 .slideText-bg {
@@ -42,21 +51,19 @@
   margin: 0 auto;
   width: 100%;
   height: 138px;
-  // background: linear-gradient(
-  //   #fafafa 53%,
-  //   #e1e1e1 53%,
-  //   #e1e1e1 54%,
-  //   #fafafa 54%,
-  //   #fafafa 73%,
-  //   #e1e1e1 73%,
-  //   #e1e1e1 74%,
-  //   #fafafa 74%,
-  //   #fafafa 100%
-  // );
-  background:#FAFAFA;
 
-  @media (min-width: 481px) and (max-width: 1200px) {
-    height: 164px;  
+  background: #fafafa;
+
+  @media (max-width: 480px) {
+    height: 190px;
+  }
+
+  @media (min-width: 481px) and (max-width: 644px) {
+    height: 175px;
+  }
+
+  @media (min-width: 645px) and (max-width: 1200px) {
+    height: 150px;
   }
 }
 
@@ -75,10 +82,38 @@
 
   color: $main-text-color;
   z-index: 100;
-  background: repeating-linear-gradient(to bottom,transparent 0, transparent 27px,#E1E1E1 30px,#E1E1E1 20px);
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 27px,
+    #e1e1e1 30px,
+    #e1e1e1 20px
+  );
+
+  @media (max-width: 480px) {
+    top: 30px;
+    left: 15%;
+    font-size: 12px;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 21px,
+      #e1e1e1 23px,
+      #e1e1e1 13px
+    );
+  }
 
   @media (min-width: 481px) and (max-width: 1200px) {
-        
+    top: 30px;
+    left: 14%;
+    font-size: 14px;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 25px,
+      #e1e1e1 27px,
+      #e1e1e1 17px
+    );
   }
 }
 
@@ -90,6 +125,17 @@
   position: absolute;
   top: 255px;
   left: calc(50% - 20px);
+
+  @media (max-width: 480px) {
+    top: 300px;
+  }
+
+  @media (min-width: 481px) and (max-width: 644px) {
+    top: 298px;
+  }
+  @media (min-width: 645px) and (max-width: 1200px) {
+    top: 270px;
+  }
 }
 
 .dots-pink {
@@ -110,12 +156,24 @@
   font-size: 20px;
   line-height: 186%;
   text-align: center;
+
+  @media (max-width: 480px) {
+    margin-top: 33px;
+    font-size: 14px;
+  }
+  @media (min-width: 481px) and (max-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 /* Кружочки */
 .slider-dots {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 32px;
+
+  @media (max-width: 480px) {
+    margin-top: 16px;
+  }
 }
 .slider-dots_item {
   cursor: pointer;
