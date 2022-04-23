@@ -32,5 +32,33 @@
     &:focus {
       background-color: #c7133e;
     }
+  }}
+
+  // УГЛОВАЯ СТРЕЛКА
+  
+  // Стрелка белая - arrow
+  // Стрелка розовая - arrow-acent
+  // ваша кнопка должна выглядеть так:
+  //  <button type="button" class="btn btn__acent">
+  //   Read more <span class="ТУТ НУЖНЫЙ КЛАСС вашей стрелки"></span>
+  // </button>
+  
+  .arrow {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   }
-}
+  
+  .arrow-acent {
+    border: solid #d41443;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  
