@@ -1,10 +1,9 @@
 /* Собственно сам слайдер */
 .slider {
   max-width: 90%;
-  //   position: relative;
+
   margin: auto;
   height: 300px;
-  //   margin-bottom: 15px;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
 
@@ -96,10 +95,6 @@
 }
 
 .name {
-  //   position: absolute;
-  //   bottom: 15px;
-  //   left: 41%;
-
   margin-top: 50px;
   font-family: "DM Sans";
   font-size: 20px;
@@ -131,80 +126,16 @@
 // Планшет
 
 @media (min-width: 481px) and (max-width: 1200px) {
-  .slideText-bg {
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-    height: 164px;
-    background: linear-gradient(
-      #fafafa 53%,
-      #e1e1e1 53%,
-      #e1e1e1 54%,
-      #fafafa 54%,
-      #fafafa 73%,
-      #e1e1e1 73%,
-      #e1e1e1 74%,
-      #fafafa 74%,
-      #fafafa 100%
-    );
-    // #fafafa;
-  }
-
-  .slideText {
-    position: absolute;
-    top: 10px;
-    min-width: 480px;
-    padding: 37px 50px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: $main-text-color;
-    z-index: 100;
+  .reviews {
+    display: none;
   }
 }
 
 // ТЕЛЕФОН
 
 @media (max-width: 480px) {
-  .slideText-bg {
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-    height: 308px;
-    background: linear-gradient(
-      #fafafa 53%,
-      #e1e1e1 53%,
-      #e1e1e1 54%,
-      #fafafa 54%,
-      #fafafa 73%,
-      #e1e1e1 73%,
-      #e1e1e1 74%,
-      #fafafa 74%,
-      #fafafa 100%
-    );
-    // #fafafa;
-  }
-
-  .slideText {
-    position: absolute;
-    top: 10px;
-    min-width: 300px;
-    // padding: 37px 50px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: $main-text-color;
-    z-index: 100;
+  .reviews {
+    display: none;
   }
 }
 
