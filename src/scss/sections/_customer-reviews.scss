@@ -29,7 +29,7 @@
   content: "";
   position: absolute;
   top: 30px;
-  left: 10%;
+  left: 7%;
   display: inline-block;
   width: 54px;
   height: 40px;
@@ -127,7 +127,49 @@
   background-color: transparent;
   border-radius: 0;
 }
+
+// Планшет
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .slideText-bg {
+    display: inline-block;
+    margin: 0 auto;
+    width: 620px;
+    height: 164px;
+    background: linear-gradient(
+      #fafafa 53%,
+      #e1e1e1 53%,
+      #e1e1e1 54%,
+      #fafafa 54%,
+      #fafafa 73%,
+      #e1e1e1 73%,
+      #e1e1e1 74%,
+      #fafafa 74%,
+      #fafafa 100%
+    );
+    // #fafafa;
+  }
+
+  .slideText {
+    position: absolute;
+    top: 10px;
+    min-width: 480px;
+    padding: 37px 50px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $main-text-color;
+    z-index: 100;
+  }
+}
+
 /* Анимация слайдов */
+
 .slider .item {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
