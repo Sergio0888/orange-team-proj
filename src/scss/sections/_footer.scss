@@ -23,9 +23,10 @@
     margin-bottom: 16px;
     transition: color 0.3s;
 &:hover {
-    color: $main-color;
-}
-}
+    color: $main-color;}
+&--fractional {
+    display: none;
+}}
 .footer__name {
     font-style: normal;
     font-weight: 400;
@@ -82,10 +83,13 @@
     letter-spacing: 0.02em;
     color: #907E82;
     padding: 8px 0;
+&--fractional {
+    display: none;
+}
 }
 @media (min-width: 769px) and (max-width: 1200px) {
     .section {
-        padding: 0 18px 40px 18px;
+        padding: 0 18px 40px;
     }
     .footer__title {
         font-size: 26px;
@@ -99,13 +103,32 @@
     .footer__icons {
         margin-left: 30px;
     }
+    .footer__title--fractional {
+        display: inline;
+    }
 }
-@media (max-widht: 480px) {
-    .footer__content {
-        
+@media (max-width: 768px) {
+    .section {
+        padding: 24px 20px 40px;
+    }
+    .footer__title--fractional, .footer__aside--fractional {
+        display: inline;
     }
     
-    .footer__contacts {
-        
-    }
+@media (max-width: 480px) {
+    
+.footer__title {
+    font-size: 18px;
 }
+
+.footer__name {
+    font-size: 34px;
+}
+
+.footer__phone {
+    font-size: 12px;
+}
+.footer__title--fractional {
+    display: inline;
+}
+}}
