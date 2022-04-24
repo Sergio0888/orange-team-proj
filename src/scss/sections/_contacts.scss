@@ -56,9 +56,11 @@
     padding-top: 32px;
     display: flex;
     flex-direction: column;
+    transition: color 0.3s;
 &--beige {
     color: #907E82;
-&:hover {
+&:hover,
+&:focus {
     color: $main-color;
 }
 }}
@@ -77,13 +79,15 @@
     height: 45px;
     display: inline;
     padding: 14px 35px;
-    transition: 400ms;
 }
 .btn__acent {  
     margin-right: 15px;
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {    
+    .section {
+        padding: 40px 18px;
+    }
     .contacts {
         margin-bottom: 40px;
     }
@@ -110,6 +114,9 @@
     }}
 
 @media (max-width: 480px) {
+    .section {
+        padding: 24px 20px;
+    }
     .contacts {
         flex-wrap: wrap;
     }

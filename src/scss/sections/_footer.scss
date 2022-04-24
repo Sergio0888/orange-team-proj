@@ -1,52 +1,111 @@
 .footer {
-    background-color: $section-background-color;   
+    background-color: $section-background-color; 
+    margin: 0;  
 &--top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 }
 .footer__content {
     text-transform: uppercase;
 }
-.footer__title {
-    
-    font-size: 30px;
-    line-height: 1.13;
+.footer__title, .footer__name {
+    line-height: 1.14;
     letter-spacing: 0.04em;
     font-family: $second-font-style;
     font-style: normal;
-    font-weight: 400;
     color: $label-title-color;
+    text-transform: uppercase;
+}
+.footer__title {
+    font-size: 30px;
     margin-bottom: 16px;
+    transition: color 0.3s;
+&:hover {
+    color: $main-color;
+}
 }
 .footer__name {
-    font-family: $second-font-style;
     font-style: normal;
     font-weight: 400;
     font-size: 58px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $main-color;
+    transition: color 0.3s;
+&:hover {
+    color: $main-color;}
 }
 .footer__socials {
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #FEA5BB;
+    margin-left: 25px;
+    transition: background-color 0.3s;
+&:hover,
+&:focus {
+    background-color: #D41443;
+}
 }
 .footer__icon {
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
 }
+.footer__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #D41443;
+    transition: color 0.3s;
+&:hover {
+    color: #907E82;;
+}
+&--black {
+    color: #000000;
+}}
 .footer__aside {
     border-top: 1px solid #E1E1E1;
     text-align: center;
+    font-family: $main-font-style;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #907E82;
+    padding: 8px 0;
 }
-
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section {
+        padding: 0 18px 40px 18px;
+    }
+    .footer__title {
+        font-size: 26px;
+    }
+    .footer__name {
+        font-size: 48px;
+    }
+    .footer__phone {
+        font-size: 14px;
+    }
+    .footer__icons {
+        margin-left: 30px;
+    }
+}
 @media (max-widht: 480px) {
     .footer__content {
-        text-align: left;
+        
     }
     
     .footer__contacts {
-        text-align: right;
+        
     }
 }
