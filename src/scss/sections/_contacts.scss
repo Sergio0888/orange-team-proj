@@ -3,9 +3,7 @@
 }
 .contacts {
     display: flex;
-    // flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     margin-left: -30px;
     margin-bottom: 60px;
     font-family: $main-font-style;
@@ -15,7 +13,7 @@
 }
 .contacts__card {
     margin-left: 30px;
-    // flex-basis: calc((100% - 90px)/3);
+    flex-basis: calc((100% - 90px)/3);
     padding: 40px;
     background-color: #fff;
     border-radius: 24px;
@@ -84,10 +82,10 @@
     margin-right: 15px;
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {    
-    .section {
-        padding: 40px 18px;
-    }
+@media (min-width: 481px) and (max-width: 1200px) {    
+     .section--bicolor {
+         padding: 40px 18px;
+     }
     .contacts {
         margin-bottom: 40px;
     }
@@ -97,28 +95,23 @@
 
 @media (max-width: 768px) {
     .contacts {
-        font-size: 12px;
         margin-bottom: 0px;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;  
     }
     .contacts__card {
         width: calc(50% - 30px);
         margin-bottom: 20px;
+        flex-basis: auto;
     }
-    .contacts__battons {
-        flex-direction: column;
-    }
-    .btn__acent {
-        padding: 14px 25px;
-        margin: 10px 0;
-    }}
-
+    
 @media (max-width: 480px) {
-    .section {
+    .section--bicolor {
         padding: 24px 20px;
     }
     .contacts {
         flex-wrap: wrap;
+        font-size: 12px;
     }
     .contacts__card {
         width: 100%;
@@ -133,4 +126,12 @@
     }
     .contacts__contact {
         padding-top: 24px;}
+    .contacts__battons {
+        flex-direction: column;
+    }
+    .btn__acent {
+        padding: 14px 25px;
+        margin: 10px 0;
+    }
+    }
 }
