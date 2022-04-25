@@ -1,8 +1,17 @@
-.about__section {
+.about__section {  
     background-color:$section-background-color;
+    background-image: url(../../img/about/bg@1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
-.about {
+.about {  
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
     &__title {
     font-family: $second-font-style;
     font-size: 30px;
@@ -23,6 +32,37 @@
     color: $main-color;
     }
 
+    &__box-one {
+        display: flex;
+        position: relative;
+    }
+
+    &__img {
+        width: 501px;
+        height: 501px;
+        background-image: url(../../img/about/cow@1.png);
+    }
+
+    &__box-two {
+        
+        max-width: 465px;
+        margin-top: 80px;
+
+        & .btn {
+           padding: 13px 57px 15px 37px;
+            border-radius: 22px;
+            font-family: $main-font-style;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 40px;
+
+            & .arrow-light{
+                right: 24%;
+            }
+        
+        }
+    }
+
     &__text-one {
     font-family: $main-font-style;
     font-weight: 500;
@@ -41,23 +81,5 @@
         color: #907E82;
         margin-top: 32px;
     }
-
-    &__btn {
-    width: 176px;
-    height: 44px;
-    background-color: #FFFFFF;
-    border-radius: 22px;
-    border: none;
-    font-family: $main-font-style;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #D41443;
-    margin-top: 40px;
-
-        &:hover {
-            background-color: #ECEBEB;
-        }
-    }
-    
 }
+

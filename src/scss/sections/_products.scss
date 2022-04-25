@@ -51,29 +51,35 @@
     &__img-one{
         position: absolute;
         right: 0;
-        width: 370px;
-        height: 394px;
+        width: 100%;
+        height: 55%;
         background-image: url(../img/products/ice-cream@1.png);
-        background-position: center;  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;  
         z-index: 1;
     }
 
     &__img-two{
         position: absolute;
         right: 0;
-        width: 370px;
-        height: 394px;
+        width: 100%;
+        height: 55%;
         background-image: url(../img/products/ice-coffee@1.png);
-        background-position: center;  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;  
     }   z-index: 1;
 
     &__img-three {
         position: absolute;
         right: 0;
-        width: 370px;
-        height: 394px;
+        width: 100%;
+        height: 55%;
         background-image: url(../img/products/milkshakes@1.png);
-        background-position: center;  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;  
     }   z-index: 1;
 
    
