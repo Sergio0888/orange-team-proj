@@ -9,11 +9,10 @@
 //   font-size: ваше значение;
 
 .btn {
+
   position: relative;
   border: none;
   transition: $transition;
-
-  padding: 15px 20px;
 
   &__light {
     color: #d41443;
