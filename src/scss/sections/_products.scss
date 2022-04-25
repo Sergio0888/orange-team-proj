@@ -25,6 +25,7 @@
     margin-top: 16px;
     }
 
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -36,15 +37,16 @@
         position: relative;
         width: calc((100% - 60px) / 3);
         height: 796px;
-        
-        
 
-        
-
-        
+        &:hover {
+            transform: scale(1.15);
+            border-radius: 24px;
+            transition: 0.5s;
+            
+        } 
     }
 
-    
+ 
         
     &__img-one{
         position: absolute;
@@ -140,9 +142,6 @@
         }
     }
 
-   
-
-
     &__box-header {
     font-family: $second-font-style;
     font-size: 30px;
@@ -188,5 +187,14 @@
     color: #FFFFFF;
     margin-top: 70px;
     width: 70%;
+    }
+
+    // @media (max-width: 480px) {
+
+    // }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+       
+        
     }
 }
