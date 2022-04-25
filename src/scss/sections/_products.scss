@@ -32,7 +32,7 @@
         align-items: center;
         text-align: center;
 
-        
+
     }
 
     &__item {
@@ -55,9 +55,9 @@
                 background-color: #b0e171;
             }
             
-        } 
-    }
+        }
 
+    }
  
         
     &__img-one{
@@ -81,7 +81,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../img/products/ice-coffee@1.png);
-    }   z-index: 1;
+        z-index: 1;
+    } 
 
     &__img-three {
         position: absolute;
@@ -92,7 +93,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../img/products/milkshakes@1.png); 
-    }   z-index: 1;
+        z-index: 1;
+}
 
    
 
