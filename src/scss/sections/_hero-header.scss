@@ -116,11 +116,12 @@
     color: #D41443;
 }
 .nav__button {
+    position: relative;
     display: inline-block;
     width: 159px;
     height: 44px;
-    left: 1105px;
-    top: 40px;
+    // left: 1105px;
+    // top: 40px;
     background: #FFFFFF;
     border-radius: 22px;
     font-family: 'DM Sans';
@@ -131,7 +132,9 @@
     border: none;
     color: #D41443;
     z-index: 99;
+    transition: $transition;
 }
+
 @media screen and (max-width: 480px) {
     .nav__button {
         display: none;
@@ -254,6 +257,7 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    transition: $transition;
 }
 @media screen  and (max-width: 1200px) {
     .button__red {
@@ -285,6 +289,7 @@
     justify-content: center;
     align-items: center;
     color: #D41443;
+    transition: $transition;
 }
 @media screen and (max-width: 1200px) {
     .button__wite {
@@ -344,11 +349,20 @@
     // margin-left: 230px;
     // margin-top: 20px;
     display: block;
-    width: 26px;
-    height: 26px;
+    
     background-color: #FFFFFF;
     border-radius: 50%;
+    position: relative;
 }
+.header__arrow-right {
+    @media screen and (min-width: 1201px) {
+        width: 26px;
+    }
+    @media screen and (min-width: 200px) and (max-width: 1200px) {
+        width: 18px;
+    }
+}
+
 @media screen and (max-width: 480px)  {
     .arrow-zg {
         display: none;
@@ -358,18 +372,24 @@
     .arrow-zg {
     margin-top: 7px;
     margin-left: 184px;
+    width: 18px;
+    height: 18px;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
     .arrow-zg {
-        margin-top: 7px;
-        margin-left: 135px;
+    margin-top: 7px;
+    margin-left: 135px;
+    width: 18px;
+    height: 18px;
     }
 }
 @media screen and (min-width: 1201px) {
     .arrow-zg {
     margin-top: 20px;
     margin-left: 229px;
+    width: 26px;
+    height: 26px;
     }
 }
 // .header__img-decoration {
