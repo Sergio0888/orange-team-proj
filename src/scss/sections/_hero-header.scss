@@ -1,5 +1,5 @@
 .header__section {
-    padding: 37px 16px;
+    padding: 37px 16px 0px 16px;
     // padding-bottom: 60px;
     background-color: #FFB8CA;
     background-image: url("../../img/header/crug.png");
@@ -9,7 +9,7 @@
 @media screen and (max-width: 480px) {
     .header__section {
         padding: 8px 20px 0px;
-        height: 502px;
+        // height: 502px;
         // background-position: top 56px left 200px;
         
     }
@@ -17,7 +17,7 @@
 @media screen and (max-width: 479px) {
     .header__section {
         background-size: 335px 335px;
-        background-position: top 83px;
+        background-position: top 56px left 36px;
     }
 
 }
@@ -30,8 +30,9 @@
 @media screen and (min-width: 481px) and (max-width: 1200px) {
     .header__section {
         padding: 32px 32px 0px;
-        padding-bottom: 42px;
-        height: 416px;
+        
+        // padding-bottom: 42px;
+        // height: 416px;
         // overflow: hidden;
         
     }
@@ -49,7 +50,7 @@
         // background-size: 42vw 42vw;
         background-size: 534px 534px;
         background-position: top 56px left 67%;
-        height: 664px;
+        // height: 664px;
 
     }
 }
@@ -61,7 +62,18 @@
     // 
     // height: 600px;
     position: relative;
+    @media screen and (max-width: 480px) {
+        height: 474px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 1200px) {
+        height: 384px;
+    }
+    @media screen and (min-width: 1201px) {
+        height: 577px;
+    }
+   
 }
+
 
 .nav {
     display: flex;
@@ -140,9 +152,9 @@
     
      
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
     .header__main-content {
-        padding-top: 136px;
+        margin-top: 136px;
         // margin-bottom: 150px;
        
     }
@@ -156,7 +168,7 @@
 @media screen  and (min-width: 1201px) {
     .header__main-content {
         padding-top: 60px;
-        margin-bottom: 278px;
+        
     }
 }
 
@@ -283,7 +295,7 @@
     }
 }
 .hero__text {
-    position: absolute;
+    // position: absolute;
  
     // width: 200px;
     // height: 78px;
@@ -303,18 +315,23 @@
 }
 @media screen and (min-width: 481px) and (max-width: 1200px) {
     .hero__text {
+    margin-top: 61px;
+    margin-left: 184px;
     width: 114px;
     height: 48px; 
     font-size: 8px;
     line-height: 12px;  
-    left: 152px;
-    top: 287px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .hero__text {
+        margin-left: 135px;
     }
 }
 @media screen and (min-width: 1201px) {
     .hero__text {
-        left: 229px;
-        top: 456px;
+        margin-top: 108px;
+        margin-left: 229px;
         width: 200px;
         height: 78px;    
         font-size: 14px;
@@ -323,30 +340,36 @@
 }
 
 .arrow-zg {
-    position: absolute;
+    // position: absolute;
     // margin-left: 230px;
     // margin-top: 20px;
     display: block;
     width: 26px;
     height: 26px;
-    background-color: #D41443;
+    background-color: #FFFFFF;
     border-radius: 50%;
 }
 @media screen and (max-width: 480px)  {
-    .arrow {
+    .arrow-zg {
         display: none;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 1200px) {
-    .arrow {
-    left: 184px;
-    top: 342px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .arrow-zg {
+    margin-top: 7px;
+    margin-left: 184px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .arrow-zg {
+        margin-top: 7px;
+        margin-left: 135px;
     }
 }
 @media screen and (min-width: 1201px) {
-    .arrow {
-    left: 229px;
-    top: 554px;
+    .arrow-zg {
+    margin-top: 20px;
+    margin-left: 229px;
     }
 }
 // .header__img-decoration {
@@ -607,7 +630,7 @@
 }
 @media screen and (min-width: 1201px) {
     .header__img-milk {
-    bottom: 60px;
+    bottom: 30px;
     left: 16px;
     width: 213px;
     height: 216px;
@@ -678,7 +701,7 @@
     transform: translate(-50%, 0) rotate(-45deg);
 }
 
-// мобильная кнобка купить 
+// мобильніе кнопки  
 .close-mob-menu {
     position: relative;
 }
@@ -725,6 +748,7 @@
     height: 502px;
     padding: 60px 20px;
 }
+
 .mob-menu__list {
     margin-top: 19px;
 }
@@ -754,7 +778,6 @@
 .modal {
     // width: 100%;
     // height: 100%;
-    // position: relative;
     width: 528px;
     height: 100%;
     padding: 40px;
@@ -763,11 +786,37 @@
     background-color: #E17992;
     margin: 0 auto;
     padding: 60px 30px;
+    position: relative;
 }
 .form {
     display: flex;
     flex-direction: column;
-    position: relative;
+    
+}
+.close__mob-modal {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+    // border: 1px solid crimson;
+}
+.close__mob-modal::before,
+.close__mob-modal::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 1px;
+    background-color: #ffffff;
+    z-index: 20;
+}
+.close__mob-modal::before {
+    transform: rotate(45deg);
+}
+.close__mob-modal::after {
+    transform: rotate(-45deg);
 }
 @media screen and (min-width: 300px) and (max-width: 1200px) {
     .form .header-title {
@@ -783,9 +832,7 @@
     display: flex;
     flex-direction: column;
 }
-.form__container:first-child {
-    // margin-top: 0px;
-}
+
 .form__input-label {
     font-family: 'DM Sans';
     font-style: normal;
@@ -878,15 +925,10 @@
         border: 1px solid #C2E297; 
     }
 }
-// .date-to-buy {
-//     width: 90%;
-//     border-radius: 3px;
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-// }
+
 .ice-cream-modal {
     width: 70px;
     position: absolute;
     top: 30px;
     right: 200px;
-
 }
