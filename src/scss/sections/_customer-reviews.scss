@@ -234,6 +234,19 @@
 }
 
 .section__padding-top {
-  padding-top: 120px;
-  padding-bottom: 180px;
+
+  @media (max-width: 480px) {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 180px;
+  }
+
+  @media (min-width: 1200px) {    
+    padding-top: 120px;
+    padding-bottom: 220px;
+  }
 }

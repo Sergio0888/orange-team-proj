@@ -3,6 +3,19 @@
 //         padding: 40px 32px;
 //     }
 // }
+.section__about-padding {
+
+    
+    @media (max-width: 480px) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        padding-bottom: 60px;
+    }
+    
+}
 
 .products {
     position: relative;

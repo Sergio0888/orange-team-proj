@@ -4,7 +4,13 @@
 }
 
 .section__padding-b {
-    padding-bottom: 120px;
+
+    @media (max-width: 1200px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 120px;
+    }
 }
 
 .advant__list {
