@@ -31,8 +31,9 @@
     bottom: 240px;
     background-image: url(../../img/about/bg@1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 0;
     
     @media (max-width: 480px) {
         
@@ -241,8 +242,5 @@
         }
     
     }
-
-    
-
 }
 
