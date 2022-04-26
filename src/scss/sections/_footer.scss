@@ -24,9 +24,9 @@
     transition: color 0.3s;
 &:hover {
     color: $main-color;}
-&--fractional {
-    display: none;
-}}
+&--fractional, &--crash {
+    display: none;}
+}
 .footer__name {
     font-style: normal;
     font-weight: 400;
@@ -60,6 +60,9 @@
     height: 20px;
     fill: #fff;
 }
+.footer__contacts {
+    text-align: right;
+}
 .footer__phone {
     font-weight: 700;
     font-size: 16px;
@@ -87,12 +90,15 @@
     display: none;
 }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
-    .section {
+@media (min-width: 481px) and (max-width: 1200px) {
+    .footer--top {
         padding: 0 18px 40px;
     }
     .footer__title {
         font-size: 26px;
+        &--fractional {
+            display: inline;
+        }
     }
     .footer__name {
         font-size: 48px;
@@ -103,37 +109,34 @@
     .footer__icons {
         margin-left: 30px;
     }
-    .footer__title--fractional {
-        display: inline;
-    }
+    
 }
 @media (max-width: 768px) {
-    .footer {
-        padding: 0 20px;
-    }
-    .footer--top {
-        display: inline;
-    }
-    .footer__content {
-        margin-bottom: 40px;
-    }
-    .footer__contacts {
-        padding-bottom: 40px;
-    }
-    .footer__title--fractional, .footer__aside--fractional {
-        display: inline;
-    }
-    .footer__phone {
-        display: flex;
-        justify-content: end;
-    }
     
+.footer__title--crash {
+    display: inline;}
+.footer__socials {
+    margin-bottom: 70px;
+}}
+      
 @media (max-width: 480px) {
-    
-.footer__title {
-    font-size: 18px;
+.footer--top {
+    padding: 24px 20px 40px;
+    display: block;
+}
+.footer__content {
+    margin-bottom: 40px;
 }
 
+.footer__title {
+    font-size: 18px;
+&--crash {
+    display: none;
+}
+}
+.footer__socials {
+    margin-bottom: 40px;
+}
 .footer__name {
     font-size: 34px;
 }
@@ -141,7 +144,15 @@
 .footer__phone {
     font-size: 12px;
 }
-.footer__title--fractional {
+.footer__title--fractional,
+.footer__aside--fractional {
     display: inline;
 }
-}}
+.footer__phone {
+    display: flex;
+    justify-content: end;
+}
+.footer__aside {
+    padding: 16px 0 20px;
+}
+}
