@@ -1,17 +1,71 @@
-.about__section {  
-    background-color:$section-background-color;
+// .about__section { 
+//     position: relative; 
+//     background-color:$section-background-color;
+    
+  
+
+// }
+.about__section {
+    background-color: $section-background-color;
+  
+    @media (max-width: 480px) {
+      background-image: url(../../img/about/bg@1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 70%;
+    }
+    @media (min-width: 1201px) {
+      background-image: url(../../img/about/bg@1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 95%;
+    }
+  }
+  
+  
+.img-backgraund {
+    position: absolute;
+    width: 100%;
+    min-height: 133px;
+    right: 0;
+    bottom: 240px;
     background-image: url(../../img/about/bg@1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-
+    padding-bottom: 0;
     
+    @media (max-width: 480px) {
+        
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        
+    }
+
+    @media (min-width: 1200px) {
+        
+    }
 }
 
 .about {  
     width: 90%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 80px;
+    }
     
 
     &__title {
@@ -68,15 +122,15 @@
     &__box-one {
         display: flex;
         position: relative;
-        
-
+    
         @media (max-width: 480px) {
             width: 280px;
             height: 279px;
+
         }
     
         @media (min-width: 481px) and (max-width: 1200px) {
-            width: 336px;
+            width: 45%;
             height: 335px;
         }
     
@@ -87,14 +141,31 @@
     }
 
     &__img {
+        display: inline-block;
         background: url(../../img/about/cow@1.png) center/cover no-repeat;
-        width: 100%; 
+        
+
+        @media (max-width: 480px) {
+                    width: 280px;
+                     height: 279px;
+                 }
+            
+                 @media (min-width: 481px) and (max-width: 1200px) {
+                     width: 336px;
+                     height: 335px;
+                     background-size: contain;
+                     
+                 }
+            
+                 @media (min-width: 1200px) {
+                    width: 501px;
+                     height: 501px;
+                 }
     }
 
-    &__box-two {
-        
+    &__box-two { 
         max-width: 465px;
-        margin-top: 80px;
+        z-index: 10;
 
         & .btn {
            padding: 13px 57px 15px 37px;
@@ -109,6 +180,21 @@
             }
         
         }
+
+        @media (max-width: 480px) {
+            width: 90%;
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+            width: 50%;
+        }
+
+        @media (min-width: 1200px) {
+            margin-top: 80px;
+        }
+
+        
+    
     }
 
     &__text-one {
@@ -156,19 +242,5 @@
         }
     
     }
-
-    @media (max-width: 480px) {
-        flex-direction: column;
-        margin-top: 32px;
-    }
-
-    @media (min-width: 481px) and (max-width: 1200px) {
-        margin-top: 40px;
-    }
-
-    @media (min-width: 1200px) {
-        margin-top: 80px;
-    }
-
 }
 

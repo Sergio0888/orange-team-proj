@@ -30,69 +30,115 @@
         </ul>
       </li>
 
-      <li class="contacts__card">
-        <p class="contacts__titles--green">Food truck</p>
-        <ul class="contacts__content">
-          <li class="contacts__address">
-            <h4 class="contacts__address--black">Los Angeles</h4>
-            <p class="contacts__text">
-              Fusce ut velit laoreet, tempus arcu molestie vulputate
-            </p>
-          </li>
-          <li class="contacts__datetime">
-            <h4 class="contacts__date">Monday - Friday</h4>
-            <time class="contacts__time">06:00 AM - 10:00 PM</time>
-          </li>
-          <li class="contacts__datetime--bottom">
-            <h4 class="contacts__date">Saturday - Sunday</h4>
-            <time class="contacts__time">08:00 AM - 16:00 PM</time>
-          </li>
-          <li class="contacts__contact">
-            <a class="contacts__contact--beige" href="tel:+610383766284"
-              >+61(0) 383 766 284</a
-            >
-            <a class="contacts__contact--beige" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
-          </li>
-        </ul>
-      </li>
+    <li class="contacts__card">
+      <p class="contacts__titles--green">Food truck</p>
+      <ul class="contacts__content">
+        <li class="contacts__address">
+          <h4 class="contacts__address--black">Los Angeles</h4>
+          <p class="contacts__text">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </li>
+        <li class="contacts__datetime">
+          <h4 class="contacts__date">Monday - Friday</h4>
+          <time class="contacts__time">06:00 AM - 10:00 PM</time>
+        </li>
+        <li class="contacts__datetime--bottom">
+          <h4 class="contacts__date">Saturday - Sunday</h4>
+          <time class="contacts__time">08:00 AM - 16:00 PM</time>
+        </li>
+        <li class="contacts__contact">
+          <a class="contacts__contact--beige" href="tel:+610383766284"
+            >+61(0) 383 766 284</a
+          >
+          <a class="contacts__contact--beige" href="mailto:noreply@envato.com"
+            >noreply@envato.com</a
+          >
+        </li>
+      </ul>
+    </li>
 
-      <li class="contacts__card">
-        <p class="contacts__titles">Cafe</p>
-        <ul class="contacts__content">
-          <li class="contacts__address">
-            <h4 class="contacts__address--black">New York</h4>
-            <p class="contacts__text">
-              Fusce ut velit laoreet, tempus arcu molestie vulputate
-            </p>
+    <li class="contacts__card">
+      <p class="contacts__titles">Cafe</p>
+      <ul class="contacts__content">
+        <li class="contacts__address">
+          <h4 class="contacts__address--black">New York</h4>
+          <p class="contacts__text">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </li>
+        <li class="contacts__datetime">
+          <h4 class="contacts__date">Monday - Friday</h4>
+          <time class="contacts__time">06:00 AM - 10:00 PM</time>
+        </li>
+        <li class="contacts__datetime--bottom">
+          <h4 class="contacts__date">Saturday - Sunday</h4>
+          <time class="contacts__time">08:00 AM - 16:00 PM</time>
+        </li>
+        <li class="contacts__contact">
+          <a class="contacts__contact--beige" href="tel:+610383766284"
+            >+61(0) 383 766 284</a
+          >
+          <a class="contacts__contact--beige" href="mailto:noreply@envato.com"
+            >noreply@envato.com</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="contacts__battons">
+    <button type="button" class="btn btn__acent" data-modal-open>
+      Our locations <span class="arrow"></span>
+    </button>
+    <button type="button" class="btn btn__light" data-fran-open>
+      Franchise <span class="arrow-light"></span>
+    </button>
+  </div>
+
+  <div class="backdrop backdrop--hidden" data-modal>
+    <div class="locations">
+      <div class="locations__box">
+        <p class="locations__content">
+          turn on location services to allow us to determine your location!
+        </p>
+        <ul class="locations__buttons">
+          <li>
+            <button type="button" class="locations__buttons--left">
+              Settings
+            </button>
           </li>
-          <li class="contacts__datetime">
-            <h4 class="contacts__date">Monday - Friday</h4>
-            <time class="contacts__time">06:00 AM - 10:00 PM</time>
-          </li>
-          <li class="contacts__datetime--bottom">
-            <h4 class="contacts__date">Saturday - Sunday</h4>
-            <time class="contacts__time">08:00 AM - 16:00 PM</time>
-          </li>
-          <li class="contacts__contact">
-            <a class="contacts__contact--beige" href="tel:+610383766284"
-              >+61(0) 383 766 284</a
+          <li>
+            <button
+              type="button"
+              class="locations__buttons--right"
+              data-modal-close
             >
-            <a class="contacts__contact--beige" href="mailto:noreply@envato.com"
-              >noreply@envato.com</a
-            >
+              Cancel
+            </button>
           </li>
         </ul>
-      </li>
-    </ul>
-    <div class="contacts__battons">
-      <button type="button" class="btn btn__acent">
-        Our locations <span class="arrow"></span>
-      </button>
-      <button type="button" class="btn btn__light">
-        Franchise <span class="arrow-light"></span>
-      </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="franchise__backdrop backdrops--hidden" data-fran>
+    <div class="franchise">
+      <div class="modal__close" data-fran-close></div>
+      <div class="franchise__box">
+        <p class="franchise__content">ice cream franchise special offer</p>
+        <ul class="franchise__buttons">
+          <li>
+            <button type="button" class="franchise__buttons--left">
+              Call us now
+            </button>
+          </li>
+          <li>
+            <button type="button" class="franchise__buttons--right">
+              Order now
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
