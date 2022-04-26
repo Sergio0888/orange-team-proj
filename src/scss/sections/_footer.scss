@@ -15,12 +15,12 @@
     letter-spacing: 0.04em;
     font-family: $second-font-style;
     font-style: normal;
-    color: $label-title-color;
     text-transform: uppercase;
 }
 .footer__title {
     font-size: 30px;
     margin-bottom: 16px;
+    color: $label-title-color;
     transition: color 0.3s;
 &:hover {
     color: $main-color;}
@@ -31,9 +31,10 @@
     font-style: normal;
     font-weight: 400;
     font-size: 58px;
+    color: $main-color;
     transition: color 0.3s;
 &:hover {
-    color: $main-color;}
+    color: $label-title-color;}
 }
 .footer__socials {
     display: flex;
@@ -111,7 +112,7 @@
     }
     
 }
-@media (max-width: 768px) {
+@media (max-width: 636px) {
     
 .footer__title--crash {
     display: inline;}

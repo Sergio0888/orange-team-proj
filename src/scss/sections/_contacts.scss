@@ -103,7 +103,7 @@
         width: calc(50% - 30px);
         margin-bottom: 20px;
         flex-basis: auto;
-    }
+    }}
     
 @media (max-width: 480px) {
     .section--bicolor {
@@ -124,6 +124,10 @@
             padding-bottom: 24px;
         }
     }
+    .contacts__titles,
+    .contacts__titles--green {
+        padding: 2px 27px;
+    }
     .contacts__contact {
         padding-top: 24px;}
     .contacts__battons {
@@ -133,5 +137,8 @@
         padding: 14px 25px;
         margin: 10px 0;
     }
+    .btn__acent .arrow {
+        right: 10%;
     }
-}
+    }
+
