@@ -1,5 +1,5 @@
 .header {
-    background-color: #FFB8CA;
+    background-color: $main-background-color;
     background-image: url("../../img/header/crug.png");
     background-repeat: no-repeat;
     
@@ -62,15 +62,20 @@
     }
 
     &__item-link {
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
-        color: #FFFFFF;
+        color: $second-text-color;
+        transition-duration: $transition;
 
+        &:hover,
+        &:focus {
+            color: $main-color;
+        }
         &.current {
-            color: #D41443;
+            color: $main-color;
         }
     }
 
@@ -83,7 +88,7 @@
         height: 44px;
         border-radius: 22px;
 
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -119,12 +124,12 @@
     }
 
     &__title {
-        font-family: 'Titan One';
+        font-family: $second-font-style;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $second-text-color;
         z-index: 7;
 
         @media screen and (max-width: 480px)  {
@@ -148,7 +153,7 @@
     }
 
     &__title-accent {
-        color: #D41443;
+        color: $main-color;
 
         @media screen and (max-width: 480px) {
             font-size: 48px;
@@ -180,7 +185,7 @@
         border-radius: 20px;
         border: none;
 
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -213,10 +218,10 @@
     }
 
     &__text {
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 400;
-        color: #FFFFFF;
+        color: $second-text-color;
         z-index: 6;
 
         @media screen and (max-width: 480px) {
@@ -353,12 +358,12 @@
         position: relative;
         z-index: 20;
 
-        font-family: 'Titan One';
+        font-family: $second-font-style;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #D41443;
+        color: $main-color;
 
         @media screen and (min-width: 480px) and (max-width: 1200px) {
             font-size: 28px;
@@ -378,7 +383,7 @@
             display: block;
             
             border-radius: 50%;
-            background: #FFFFFF;
+            background: $second-text-color;
             
             @media screen and (min-width: 480px) and (max-width: 1200px) {
                 width: 16px;
@@ -392,10 +397,10 @@
     }
 
     &__text {
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 400;
-        color: #FFFFFF;
+        color: $second-text-color;
 
         @media screen and (min-width: 480px) and (max-width: 1200px) {
             font-size: 8px;
@@ -417,14 +422,20 @@
 }
 @media screen and (max-width: 480px) {
     .burger {
-        margin-left: auto;
-        margin-right: 0px;
+        position: absolute;
+        right: 0px;
+    }
+    .burger.is-open {
+        position: fixed;
+        right: 25px;
+        top: 15px;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 1200px) {
     .burger {
         position: absolute;
         right: 175px;
+        
     }
     .burger.is-open {
         position: fixed;
@@ -446,7 +457,7 @@
     display: inline-block;
     width: 20px;
     height: 1px;
-    background-color: #D41443;
+    background-color: $main-color;
     transition: 0.2s;
 }
 
@@ -489,7 +500,7 @@
     // height: 502px;
     padding: 60px 20px;
     // top: -45px;
-    background-color: #E17992;
+    background-color: #e17992;
     
     display: flex;
     flex-direction: column;
@@ -540,15 +551,16 @@
         border-radius: 22px;
     
 
-        font-family: 'DM Sans';
+        font-family: $main-font-style;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         z-index: 100;
         transition: $transition; 
     }
-      &__list {
-      margin-top: 19px;
+
+    &__list {
+    margin-top: 19px;
     }
     &__item {
       padding-top: 11px;
@@ -559,15 +571,15 @@
       border-top: 1px solid #e18298;
     }
     &__item-link {
-      font-family: "DM Sans";
+      font-family: $main-font-style;
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
       line-height: 18px;
-      color: #ffffff;
+      color: $second-text-color;
   
           &.current {
-        color: #d41443;
+        color: $main-color;
       }
     }
 }
@@ -687,7 +699,7 @@
     left: 50%;
     width: 17px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: $second-text-color;
     z-index: 20;
 }
 .close__mob-modal::before {
@@ -712,12 +724,12 @@
 }
 
 .form__input-label {
-    font-family: 'DM Sans';
+    font-family: $main-font-style;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: $second-text-color;
 }
 .form__input {
     height: 40px;
@@ -749,7 +761,7 @@
 
     &:focus-within {
         outline: none;
-        border: 1px solid #C2E297;
+        border: 1px solid rgb(194, 226, 151);
         border-radius: 4px;
     }
     &::placeholder {
@@ -768,15 +780,15 @@
     height: 40px;
 }
 .chooos__wite {
-    font-family: 'DM Sans';
+    font-family: $main-font-style;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    color: #FFFFFF;
-    background-color: #FFB8CA;
+    color: $second-text-color;
+    background-color: $main-background-color;
 }
 .strawberry {
-    color: #D41443;
+    color: $main-color;
     font-weight: 700;
 }
 // .banana {
