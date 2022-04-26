@@ -93,6 +93,11 @@
         @media screen and (max-width: 480px) {
                 display: none;
         }
+
+        @media (min-width: 481px) and (max-width: 1200px) {
+                position: absolute;
+                right: 0;
+        }
     }
 }
 
@@ -418,10 +423,16 @@
 }
 @media screen and (min-width: 481px) and (max-width: 1200px) {
     .burger {
-        margin-left: auto;
-        margin-right: 32px;
+        position: absolute;
+        right: 175px;
+    }
+    .burger.is-open {
+        position: fixed;
+        right: 25px;
+        top: 15px;
     }
 }
+
 @media screen and (min-width: 1201px) {
     .burger {
         display: none;
@@ -436,7 +447,7 @@
     width: 20px;
     height: 1px;
     background-color: #D41443;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .burger__line:nth-child(1) {
@@ -454,6 +465,7 @@
 .burger.is-open
 .burger__line:nth-child(1) {
     transform: translate(-50%, 0) rotate(45deg);
+    background-color: $second-text-color;
 }
 
 .burger.is-open
@@ -464,7 +476,12 @@
 .burger.is-open
 .burger__line:nth-child(3) {
     transform: translate(-50%, 0) rotate(-45deg);
+    background-color: $second-text-color;
 }
+
+
+
+
 
 
 .mob {
@@ -478,14 +495,27 @@
     flex-direction: column;
     position: fixed;
     overflow-y: scroll;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    transition: 0.4s;
+    display: none;
+
+    @media (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    
+    @media (min-width: 481px) and (max-width: 1200px) {
+        width: 30%;
+        height: 100vh;
+        right: 0;
+    }
+
 
     &.is-open {
         top: 0;
         z-index: 200;
+        display: inline-block;
     }
 
   
@@ -618,6 +648,9 @@
 
 
 // Модалка форма
+
+
+
 .modal {
     // width: 100%;
     // height: 100%;
@@ -631,6 +664,7 @@
     margin: 0 auto;
     padding: 60px 30px;
     
+
 }
 .form {
     display: flex;
