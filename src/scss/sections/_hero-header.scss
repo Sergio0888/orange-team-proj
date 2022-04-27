@@ -1,5 +1,6 @@
 .header {
   background-color: $main-background-color;
+  overflow: hidden;
 
   @media screen and (max-width: 480px) {
     padding: 8px 0 0 20px;
@@ -319,8 +320,8 @@
   background-color: $label-title-color;
 
   @media screen and (max-width: 480px) {
-    left: 30%;
-    bottom: 40px;
+    left: 10%;
+    bottom: 75px;
     width: 346px;
     height: 344px;
   }
@@ -409,6 +410,8 @@
     font-weight: 400;
     color: $second-text-color;
     z-index: 200;
+    position: absolute;
+    width: 100%;
 
     @media screen and (min-width: 480px) and (max-width: 1200px) {
       font-size: 8px;
