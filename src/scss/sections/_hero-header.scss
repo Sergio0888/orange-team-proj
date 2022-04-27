@@ -2,7 +2,7 @@
   background-color: $main-background-color;
 
   @media screen and (max-width: 480px) {
-    padding: 8px 20px 0px;
+    padding: 8px 0 0 20px;
   }
   @media screen and (min-width: 481px) and (max-width: 1200px) {
     padding: 32px 32px 0px;
@@ -424,7 +424,8 @@
 @media screen and (max-width: 480px) {
   .burger {
       position: absolute;
-      right: 0px;
+      right: 30px;
+      top: 5px;
   }
   .burger.is-open {
       position: fixed;
