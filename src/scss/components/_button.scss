@@ -9,7 +9,6 @@
 //   font-size: ваше значение;
 
 .btn {
-
   position: relative;
   border: none;
   transition: $transition;
@@ -103,4 +102,37 @@
 .arrow-light::after {
   transform: rotate(-45deg);
   top: 50%;
+}
+
+.pseudo::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: $label-title-color;
+
+  @media screen and (max-width: 480px) {
+    left: 30%;
+    bottom: 40px;
+    width: 346px;
+    height: 344px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    left: 30%;
+    bottom: 40px;
+    width: 335px;
+    height: 333px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 335px;
+    height: 333px;
+    bottom: 40px;
+    left: 40%;
+  }
+  @media screen and (min-width: 1201px) {
+    width: 534px;
+    height: 534px;
+    bottom: 77px;
+    left: 470px;
+  }
 }
