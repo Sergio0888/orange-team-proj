@@ -37,14 +37,41 @@
           ice cream made with <span class="content__title-accent">passion</span>
         </h1>
         <div class="content__anchors">
-          <a class="btn__acent" href="#products">Products</a>
-          <a class="btn__light" href="#how-it's-made">How it's made?</a>
+          <button class="btn btn__acent" href="#products">Products</button>
+          <button class="btn btn__light" href="#how-it's-made">
+            How it's made?
+          </button>
         </div>
-        <p class="content__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <span class="content__arrow"></span>
+        <div class="content__milk-box">
+          <picture>
+            <source
+              srcset="
+                ../../img/header/milk@1.png 1x,
+                ../../img/header/milk@2.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              srcset="
+                ../../img/header/milk@1.webp 1x,
+                ../../img/header/milk@1.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="content__img-milk"
+              src="../../img/header/milk@1.png"
+              alt="milk"
+            />
+          </picture>
+          <div>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <span class="content__arrow"></span>
+          </div>
+        </div>
       </div>
 
       <ul class="our-enterprises">
@@ -57,8 +84,6 @@
           <p class="our-enterprises__text">food trucks</p>
         </li>
       </ul>
-
-      <!-- <img class="content__img-girl" src="../../../img/header/girl@1.webp" alt="gerla"> -->
       <picture>
         <source
           srcset="
@@ -81,29 +106,7 @@
         />
       </picture>
 
-      <picture>
-        <source
-          srcset="
-            ../../img/header/milk@1.png 1x,
-            ../../img/header/milk@2.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          srcset="
-            ../../img/header/milk@1.webp 1x,
-            ../../img/header/milk@1.webp 2x
-          "
-          type="image/webp"
-        />
-        <img
-          class="content__img-milk"
-          src="../../img/header/milk@1.png"
-          alt="milk"
-        />
-      </picture>
-
-      <picture>
+      <picture class="pseudo">
         <source
           srcset="
             ../../img/header/ice-cream@1.png 1x,
@@ -128,9 +131,7 @@
   </div>
 </header>
 
-<!-- <span class="close-mob-menu"></span> -->
-
-<!-- Меню мобильное, кнопки ? -->
+<!-- Меню мобильное -->
 
 <div class="mob" id="mobile-menu" data-menu>
   <button class="mob__btn btn btn__light" type="submit">
@@ -154,103 +155,3 @@
     </li>
   </ul>
 </div>
-
-<!-- <div class="mob-menu" id="mobile-menu" data-menu></div>
-<button class="nav__button-mob btn btn__light" type="submit">Buy now <span class="arrow-light"></span></button>
-<ul class="mob-menu__list">
-  <li class="mob-menu__item"><a class="mob-menu__item-link mob-menu__item-link--active" href="#">Home</a></li>
-  <li class="mob-menu__item"><a class="mob-menu__item-link" href="">About us</a></li>
-  <li class="mob-menu__item"><a class="mob-menu__item-link" href="">How it's made?</a></li>
-  <li class="mob-menu__item"><a class="mob-menu__item-link" href="">Our products</a></li>
-  <li class="mob-menu__item"><a class="mob-menu__item-link" href="">Contact</a></li>
-</ul>
-</div>  -->
-
-<!-- <div class="header__img-decoration">
-        
-      </div> -->
-
-<!-- Мобильное меню -->
-
-<!-- -------------------------------------------------- -->
-
-<!--Модалка -->
-
-<!-- 
- <div  class="">
-      <div class="modal"> 
-        
-         <form class="form">
-          <span class="close__mob-modal"></span>
-              <p class="header-title form__header">Choose your<span class="header-title--accent">ice cream</span> </p>
-
-              <div class="form__container">
-                  <label class="form__input-label"  for="contact-us-name">Your name</label>
-                  <input class="form__input" type="text" name="username" id="contact-us-name">
-                  <span class="form__input-decor-orientation">
-                      
-                  </span>
-              </div>
-
-              <div class="form__container">
-                  <label class="form__input-label" for="contact-us-tel">Your phone number</label>
-                  <input class="form__input" type="tel" name="tel" id="contact-us-tel">
-                  <span  class="form__input-decor-orientation">
-                      
-                  </span>
-              </div>
-
-              <div class="form__container">
-                  <label class="form__input-label" for="contact-us-email">Your mail</label>
-                  <input class="form__input" type="email" name="email" id="contact-us-email">
-                  <span  class="form__input-decor-orientation">
-                      
-                  </span>
-              </div> 
-               <div class="form__container">
-              <label class="form__input-label" for="contact-us-feedback">Your wishes</label>
-              <textarea class="form__textarea" name="feedback" id="contact-us-feedback" rows="10" placeholder="Write anything"></textarea>
-            </div>
-              <label class="form__input-label">
-                <div class="form__container">
-                <label class="form__input-label"  for="Type-ice-cream">Сhoose ice cream</label>
-
-                <select class="type-ice-cream" name="Type-ice-cream" id="Type-ice-cream">
-                  <optgroup class="chooos__wite" label="White">
-                    <option class="strawberry chooos__wite" value="Strawberry">Strawberry</option>
-                    <option class="banana chooos__wite" value="Banana">Banana</option>
-                    <option class="blueberry" value="Blueberry chooos__wite">Blueberry</option>
-                  </optgroup>
-
-                  <optgroup class="chooos__black" label="Chocolate">
-                    <option class="chooos__black" value="In the horn">In the horn</option>
-                    <option class="chooos__black" value="Zebra">Zebra</option>
-                    <option class="chooos__black" value="In cookies">In cookies</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div class="form__container">
-                How many boxes will you buy?
-                <input class="how-many" type="number" name="weight" min="0" max="10000" step="5" value="100" />
-              </label>
-            </div>
-            <div class="form__container">
-             
-                Date of departure
-                <input class="date-to-buy" type="date" min="2022-05-03" max="2022-07-25" />
-              </label>
-    
-              <button class="nav__button" type="submit">Send</button>
-              <img class="ice-cream-modal" src="../../../img/header/ice_cream_modal.png" alt="">
-              
-         </form>
-      </div> 
-  </div>   -->
-
-<!-- <svg class="form__input-decor-icon">
-                      <use href="./images/form.svg#icon-person-black"></use>
-                      </svg>  -->
-
-<!-- <svg class="form__input-decor-icon">
-                          <use href="./images/form.svg#icon-phone-black"></use>
-                      </svg> -->
