@@ -1,5 +1,10 @@
 .advant {
   display: flex;
+
+  @media (min-width: 481px) and (max-width: 1200px) {
+        width: 70%;
+        margin: 0;
+  }
 }
 
 .section__padding-b {
